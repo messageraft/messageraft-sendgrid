@@ -2,8 +2,8 @@ import {
   EmailProvider,
   ProviderName,
   ProviderType,
-  ProviderConstructorOptions,
   SendgridEmailOptions,
+  SendgridConstructorOptions,
 } from '@messageraft/common'
 
 import sendgridMail from '@sendgrid/mail'
@@ -12,9 +12,9 @@ class SendGridProvider extends EmailProvider {
   name = ProviderName.SENDGRID
   type = ProviderType.EMAIL
 
-  constructor(options: ProviderConstructorOptions) {
+  constructor(options: SendgridConstructorOptions) {
     super()
-    if (!options.apiKey) throw new Error('Sendgrid API Key not provided')
+    if (!options || !options.apiKey) throw new Error('Sendgrid API Key not provided')
 
     sendgridMail.setApiKey(options.apiKey)
   }
