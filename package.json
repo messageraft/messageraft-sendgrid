@@ -1,9 +1,31 @@
 {
   "name": "@messageraft/sendgrid",
   "version": "0.0.1",
-  "license": "MIT",
+  "description": "Sendgrid provider package for Messageraft server",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "messageraft",
+    "sendgrid"
+  ],
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "homepage": "https://messageraft.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/messageraft/messageraft-sendgrid.git"
+  },
+  "bugs": "https://github.com/messageraft/messageraft-sendgrid/issues",
+  "files": [
+    "dist",
+    "src"
+  ],
   "author": "Messageraft",
-  "repository": "messageraft/sendgrid",
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",
   "types": "dist/main/index.d.ts",
