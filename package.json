@@ -1,6 +1,6 @@
 {
   "name": "@messageraft/sendgrid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Sendgrid provider package for Messageraft server",
   "keywords": [
     "javascript",
